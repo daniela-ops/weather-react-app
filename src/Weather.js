@@ -9,6 +9,7 @@ export default function Weather() {
     console.log(response.data);
 
     setWeatherData({
+      ready: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
