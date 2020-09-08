@@ -1,0 +1,25 @@
+.Weather .weather-app-container-wrapper {
+  width: 600px;
+  margin: 30px auto;
+}
+
+.Weather .weather-app-container {
+  padding: 30px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+}
+
+.Weather form {
+  display: block;
+  margin-top: 0em;
+}
+
+.Weather ul {
+  display: block;
+  list-style-type: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
