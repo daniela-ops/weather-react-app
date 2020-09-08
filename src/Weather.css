@@ -1,17 +1,12 @@
-.Weather .weather-app-container-wrapper {
-  width: 600px;
-  margin: 30px auto;
-}
-
-.Weather .weather-app-container {
-  padding: 30px;
-  border: 1px solid whitesmoke;
-  border-radius: 5px;
-}
-
 .Weather form {
   display: block;
   margin-top: 0em;
+}
+.Weather h1 {
+  font-size: 50px;
+  text-align: left;
+  font-weight: 100;
+  margin-bottom: 0;
 }
 
 .Weather ul {
@@ -22,4 +17,43 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
+}
+
+.Weather .weather-app-container-wrapper {
+  margin: 30px auto;
+  margin-bottom: 10px;
+}
+
+.Weather .weather-app-container {
+  padding: 30px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+}
+
+.Weather .todays-temperature {
+  text-align: center;
+  margin: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Weather .todays-temperature strong {
+  font-size: 70px;
+  line-height: 1;
+  font-weight: lighter;
+  color: black;
+}
+
+.Weather .todays-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
+.Weather .description {
+  padding: 0px 62px;
+}
+
+.Weahter .icon {
+  margin: 0 auto;
 }
