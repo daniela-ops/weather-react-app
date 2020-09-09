@@ -54,6 +54,10 @@
   padding: 0px 62px;
 }
 
-.Weahter .icon {
-  margin: 0 auto;
+.Weahter canvas {
+  text-align: center;
+}
+
+.Weather .weather-icon {
+  text-align: center;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
@@ -26,10 +27,9 @@ export default function WeatherInfo(props) {
           <span className="text-capitalize">{props.data.description}</span>
         </div>
         <div className="col-6">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-            className="icon"
-          />
+          <div className="weather-icon">
+            <WeatherIcon code={props.data.icon} />
+          </div>
           <ul>
             <li>
               Humidity: <span>{props.data.humidity}</span>%
