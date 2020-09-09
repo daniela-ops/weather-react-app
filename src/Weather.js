@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./Weather.css";
 
@@ -13,7 +14,7 @@ export default function Weather() {
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
-      date: "Wednesday, May 17",
+      date: new Date(response.data.dt * 1000),
       city: response.data.name,
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
       description: response.data.weather[0].description,
@@ -32,7 +33,7 @@ export default function Weather() {
                     type="search"
                     placeholder="Type a city..."
                     className="form-control"
-                    autocomplete="off"
+                    autoComplete="off"
                     autoFocus="on"
                   />
                 </div>
@@ -49,8 +50,9 @@ export default function Weather() {
             <div className="row">
               <div className="col-6">
                 <ul>
-                  <li>Saturday, July 18 2020</li>
-                  <li>3:11 PM</li>
+                  <li>
+                    <FormattedDate date={weatherData.date} />
+                  </li>
                 </ul>
                 <div className="todays-temperature">
                   <strong className="temperature">
