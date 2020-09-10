@@ -14,10 +14,8 @@ export default function WeatherInfo(props) {
               <FormattedDate date={props.data.date} />
             </li>
           </ul>
-          <div className="todays-temperature">
-            <div className="float-left">
-              <WeatherTemperature celsius={props.data.temperature} />
-            </div>
+          <div className="float-left">
+            <WeatherTemperature celsius={props.data.temperature} />
           </div>
           <br />
           <br />
