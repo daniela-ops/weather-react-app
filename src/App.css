@@ -8,4 +8,10 @@ body {
 }
 .App footer {
   font-size: 12px;
+  margin: 10px 0px;
+}
+.App .btn-primary {
+  color: #fff;
+  background-color: black;
+  border-color: black;
 }

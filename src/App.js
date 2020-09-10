@@ -8,7 +8,7 @@ function App() {
       <div className="container">
         <Weather defaultCity="New York" />
         <footer>
-          This project was coded by Daniela Arias and is{" "}
+          This project was coded by 👩🏻‍💻 Daniela Arias and is{" "}
           <a
             href="https://github.com/wecodeschool/react-weather-app.git"
             target="_blank"
